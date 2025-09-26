@@ -67,21 +67,20 @@ GET /api/auth/verify-token → Verify token, return user info
 
 Product Service
 
-GET /api/ → Get all products
+GET /api/get-product → Get all products
 
-GET /products/:id → Get single product details
+GET /api/get-product-one → Get single product details
 
-🛒 Cart Service
+Cart Service
 
-POST /add-to-cart
+POST /api/cart/add-to-cart
 
 Headers: Authorization: Bearer <token>
 
-Body: { "productId": "123", "quantity": 2 }
+GET /api/cart/get-cart/
+Headers: Authorization: Bearer <token>
 
-GET /get-cart/:userId
+GET  /api/cart/edit-quantity/:token
 
-PUT /edit-cart/:itemId
-
-DELETE /remove-from-cart/:itemId
+DELETE /api/cart/delete-cart/:id
 
