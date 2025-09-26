@@ -27,7 +27,7 @@ Success response returned to frontend.
 
 
 **Architecture DiagramProduct Service**
-
+https://drive.google.com/file/d/1IimFWx2ovGWSg6_pJIa_AhtOKIRlJxTe/view?usp=drivesdk
 
 **1. Backend Setup (Services)Product Service**
 
