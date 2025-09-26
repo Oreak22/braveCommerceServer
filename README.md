@@ -1,17 +1,17 @@
-E-commerce Checkout System – Microservices (Proof of Concept)
-Overview
+**E-commerce Checkout System – Microservices (Proof of Concept)
+Overview**
 
 This project is a microservices-based checkout system designed as part of a one-week challenge.
 The goal was to break down a monolithic checkout process into smaller services, then implement a Cart Service with frontend integration.
 
-Architecture
+**Architecture**
 Services Implemented
 
-Auth Service – Handles user sign-up, sign-in, and JWT token generation/verification.
+**Auth Service** – Handles user sign-up, sign-in, and JWT token generation/verification.
 
-Product Service – Manages the product catalog (fetch product list & details).
+**Product Service** – Manages the product catalog (fetch product list & details).
 
-Cart Service – Manages cart items (add, edit, delete, view) and validates requests via Auth + Product.
+**Cart Service** – Manages cart items (add, edit, delete, view) and validates requests via Auth + Product.
 
 Flow Example: Add to Cart
 
@@ -57,7 +57,8 @@ npm install
 npm run dev
 
 **API Endpoints**
- Auth Service
+
+ **Auth Service**
 
 POST /api/auth/register → Register new user
 
@@ -65,13 +66,13 @@ POST /api/auth/signin → Login user, returns JWT
 
 GET /api/auth/verify-token → Verify token, return user info
 
-Product Service
+**Product Service**
 
 GET /api/get-product → Get all products
 
 GET /api/get-product-one → Get single product details
 
-Cart Service
+**Cart Service**
 
 POST /api/cart/add-to-cart
 
